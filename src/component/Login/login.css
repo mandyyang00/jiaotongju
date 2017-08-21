@@ -1,0 +1,13 @@
+.text{
+
+	width: 100%;
+	/*height: 800px;*/
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	
+}
+.account{
+	margin-top: 100px;
+}
+
