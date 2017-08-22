@@ -1,0 +1,24 @@
+.zhengju{
+	width: 90%;
+	margin: 0 auto;
+}
+.zhengju form{
+	display: block;
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+	outline: 0;
+	outline:1.5px solid #aaaaaa;
+	margin-bottom: 20px;
+	bottom: 0;
+	outline: 0
+
+}
+.zhengju table{
+	width: 100%;
+}
+
+.zhengju table tr td{
+	border:1px solid #aaaaaa;
+}
+

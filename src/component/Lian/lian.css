@@ -1,0 +1,152 @@
+.lian{
+	padding-bottom: 20px;
+	width: 90%;
+	margin: auto;
+}
+.lian .title{
+	margin-left:60%;
+	margin-bottom: 5px;
+}
+.lian .title >*{
+	width: 50px;
+	border:0;
+	line-height: 20px;
+	height: 20px
+}
+.lian .title> input{
+	border-bottom:1px solid #aaaaaa
+}
+.lian form{
+	display: block;
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+	outline: 0;
+	outline:1.5px solid #aaaaaa;
+	margin-bottom: 20px;
+}
+.lian .flex{
+	width: 100%;
+	display:flex;
+	/*flex-wrap: nowrap;*/
+	/*justify-content:space-between;*/
+}
+.lian input{
+	height: 45px;
+	margin: 0;
+	flex-shrink:1;
+	outline: 0;
+	border:0;
+	border:1px solid #aaaaaa;
+	flex-grow:1;
+
+}
+.lian span{
+	display: inline-block;
+	border:1px solid #aaaaaa;
+	line-height: 43px;
+	width: 80px;
+	text-align: center;
+	flex-shrink:0;
+	
+}
+.lian .aa{
+	display:flex;
+	flex-grow:1;
+
+}
+.lian .gongmin{
+	display: flex;
+	/*flex-grow:0.5;*/
+	flex-shrink:0;
+	/*border:1px solid #aaaaaa;*/
+	
+}
+.lian .faren{
+	display:flex;
+	flex-grow:2;
+	flex-shrink:0;
+	
+	
+	
+}
+.lian .xingming{
+	flex-grow:1;
+	/*border:1px solid red;*/
+	display:flex;
+	flex-direction:column;
+
+}
+.lian .xingming .small{
+	display: flex;
+	/*flex-grow:1.5;*/
+	/*height: 50px;*/
+}
+
+.lian .xingming .small>span{
+	width: 60px;
+	flex-shrink:0;
+}
+.lian .xingming .small>div{
+	height: 45px;
+	margin: 0;
+	outline: 0;
+	border:0;
+	/*border:1px solid #aaaaaa;*/
+	flex-grow:1;
+	display: flex;
+}
+.lian .xingming .small>div>input{
+	flex-grow:1;
+}
+
+
+.lian .mingcheng{
+	flex-grow:1;
+	/*border:1px solid red;*/
+	display:flex;
+	flex-direction:column;
+}
+.lian .mingcheng .small{
+	display: flex;
+	flex-grow:1;
+
+}
+.lian .mingcheng .small span{
+	display:block;
+	width: 80px;
+	flex-shrink:0;
+	height: 80px;
+	line-height: 80px;
+	
+}
+
+.lian .mingcheng .small>div{
+	height: 45px;
+	margin: 0;
+	outline: 0;
+	border:0;
+	/*border:1px solid #aaaaaa;*/
+	flex-grow:1;
+	display: flex;
+}
+.lian .mingcheng .small>div>input{
+	flex-grow:1;
+	height: 80px;
+}
+.lian .yijian{
+	border:1px solid #aaaaaa;
+	flex-grow:1;
+}
+.lian .yijian input{
+	display: block;
+	width: 100%;
+	/*border:0;*/
+}
+
+.lian .last>*{
+	border:0;
+}
+.lian .bb{
+	flex-grow:2;
+}

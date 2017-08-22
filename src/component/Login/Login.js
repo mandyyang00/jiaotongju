@@ -1,6 +1,7 @@
 import React from 'react'
-import {Icon, Input, Button, Checkbox } from 'antd';
+import {Input, Button,message, } from 'antd';
 import Header from '../Header/Header'
+import {Link} from 'react-router-dom'
 
 
 
@@ -11,13 +12,28 @@ class Login extends React.Component{
 		super()
 		this.state={
 			text:'',
-			password:''
+			password:'',
+			visibal:false,
 		}
+		console.log(this.state.text)
 	}
 
 
 	onClick(){
+		let text1=document.querySelector('.account').value
+		let password1=document.querySelector('.password').value
+		if(text1.trim()!=='' && password1.trim!=='' && text1.length!==0 && password1.length!==0){
+			this.setState({
+				text:text1,
+				password:password1,
+				visibal:true
+			})
+		}else{
+			message.error('请先登录')
+		}
+		// console.log(text1)
 
+		
 	}
 
 
@@ -41,18 +57,26 @@ class Login extends React.Component{
 		'backgroundColor':'#49a9ee',
 		'border':'0'
 	}
-	let {text,password} =this.state
-	console.log(text)
+	let {text,password,visibal} =this.state
+	console.log(visibal)
+	
     return (
 
       <div>
-			<Header title='秦皇岛市交通管理登记系统'></Header>
-      	<div className="text" >
-	         <Input placeholder="账号" style={style} className='account'  onChange={e=>this.setState({text:e.target.value})}/ >
-	        	<Input placeholder="密码" style={style} onChange={e=>this.setState({password:e.target.value})}/>
-	      </div>
-	      <Button type="submit" style={styleButton}>登录</Button>
-        	
+      	  
+      	<div>		
+	      	<Header title='秦皇岛市交通局执法系统' style={{'marginTop':'50px'}}></Header>
+	      	<div className="text" >
+		         <Input placeholder="账号" style={style} className='account'/ >
+		        	<Input placeholder="密码" style={style} className='password'/>
+		      </div>
+
+		      <Link to='/lian:id'>
+		      	<Button type="submit" style={styleButton} onClick={this.onClick.bind(this)}>登录</Button>
+		      </Link>
+		      
+        	</div>
+
       </div> 
       
     )

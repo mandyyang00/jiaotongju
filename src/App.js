@@ -1,6 +1,8 @@
 import React from 'react';
 import Login from './component/Login/Login'
 import Header from './component/Header/Header'
+import Lian from './component/Lian/Lian'
+import Zhengju from './component/Zhengju/Zhengju'
 import 'antd/dist/antd.css';
 import './App.css'
 import {
@@ -15,10 +17,10 @@ class App extends React.Component {
     return (
     	<HashRouter>
 	    	<div className='app'>
-	    		<Header></Header>
 	      	<div>
 	      		<Route path='/' exact component={Login} />
-	        	
+	        	<Route path='/lian:id' exact component={Lian} />
+            <Route path='/zhengju' exact component={Zhengju} />
 	      	</div>
 	      </div>
       </HashRouter>
