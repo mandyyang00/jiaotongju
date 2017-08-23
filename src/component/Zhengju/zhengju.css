@@ -1,8 +1,9 @@
 .zhengju{
-	width: 90%;
+	width: 1000px;
 	margin: 0 auto;
+	padding-bottom:40px;
 }
-.zhengju form{
+.zhengju div{
 	display: block;
 	background: white;
 	width: 100%;
@@ -10,15 +11,43 @@
 	outline: 0;
 	outline:1.5px solid #aaaaaa;
 	margin-bottom: 20px;
-	bottom: 0;
-	outline: 0
+	
 
 }
 .zhengju table{
-	width: 100%;
+	border-collapse:collapse;
+}
+.zhengju td{
+	border:1px solid #aaaaaa;
+	height: 40px;
+}
+.zhengju .title{
+	width: 60px;
+	text-align: center;
+}
+.zhengju .small{
+	width: 80px;
+	text-align: center;
+	
+}
+.zhengju .middle{
+	margin-top: 20px;
+	text-indent: 20px;
+	line-height: 20px;
+}
+.zhengju .down{
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 0;
+
+}
+.zhengju .down p{
+	float:left;
+}
+.zhengju .footer{
+	margin-top: 50px;
+	line-height: 30px;
+	float:right;
 }
 
-.zhengju table tr td{
-	border:1px solid #aaaaaa;
-}
 
