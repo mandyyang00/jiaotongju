@@ -1,0 +1,34 @@
+.yijianshu{
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	padding-bottom: 20px;
+}
+.yijianshu .content{
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+	outline: 0;
+	outline:1px solid #aaaaaa;
+	margin-bottom: 20px;
+}
+.yijianshu table{
+	border-collapse:collapse;
+}
+.yijianshu td{
+	border:1px solid #aaaaaa;
+	height: 40px;
+	text-align: center
+}
+.yijianshu .first{
+	width: 60px;
+	text-align: center;
+}
+.yijianshu .second{
+	width: 80px;
+}
+.yijianshu table td p{
+	line-height: 40px;
+	margin-bottom: 20px;
+	float:right;
+}
