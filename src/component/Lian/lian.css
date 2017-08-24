@@ -5,7 +5,7 @@
 	background: white;
 }
 .lian .title{
-	margin-left:60%;
+	margin-left:700px;
 	margin-bottom: 5px;
 }
 .lian .title >*{
@@ -28,9 +28,9 @@
 	margin-bottom: 20px;
 }
 
-/*.lian table{
+.lian table{
 	border-collapse:collapse;
-}*/
+}
 .lian td{
 	border:1px solid #aaaaaa;
 	height: 40px;

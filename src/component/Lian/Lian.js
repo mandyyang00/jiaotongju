@@ -23,17 +23,17 @@ class Lian extends React.Component{
 						<tr>
 							<td className='first'>案件<br/>来源</td>
 							<td colSpan='4'>
-								<input type="text" style={{'width':'100','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'380px','border':'0','outline':'0'}}/>
 							</td>
 							<td className='four'>受案时间</td>
 							<td colSpan='2'>
-								<input type="text" style={{'width':'100','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'330px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 						<tr>
 							<td>案由</td>
 							<td colSpan='7'>
-								<input type="text" style={{'width':'100','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'930px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 						<tr>
@@ -49,7 +49,7 @@ class Lian extends React.Component{
 							</td>
 							<td className='four'>年龄</td>
 							<td>
-								<input type="text" style={{'width':'220px','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'250px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 						<tr>
@@ -63,7 +63,7 @@ class Lian extends React.Component{
 							</td>
 							<td>联系电话</td>
 							<td>
-								<input type="text" style={{'width':'220px','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'250px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 						<tr>
@@ -74,7 +74,7 @@ class Lian extends React.Component{
 							</td>
 							<td>法定<br/>代表人</td>
 							<td>
-								<input type="text" style={{'width':'220px','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'250px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 						<tr>
@@ -84,7 +84,7 @@ class Lian extends React.Component{
 							</td>
 							<td>联系<br/>电话</td>
 							<td>
-								<input type="text" style={{'width':'220px','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'250px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 						<tr>
@@ -129,7 +129,7 @@ class Lian extends React.Component{
 						<tr>
 							<td>备<br/>注</td>
 							<td colSpan='7'>
-								<input type="text" style={{'width':'900px','border':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'930px','border':'0','outline':'0'}}/>
 							</td>
 						</tr>
 

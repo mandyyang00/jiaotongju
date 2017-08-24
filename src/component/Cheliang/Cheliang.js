@@ -62,31 +62,31 @@ class Cheliang extends React.Component{
 				</div>
 				<div className='footerb'>
 						<p>暂扣时间:
-							<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
-							年<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
-							月<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
-							日<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
-							时<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
+							年<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
+							月<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
+							日<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
+							时<input type="text" style={{'width':'50px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 							分
 						</p>
 
 						<p>
-						  	地点：<input type="text" style={{'width':'800px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+						  	地点：<input type="text" style={{'width':'800px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 						</p>
 
 						<p>
 							我单位在
-							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 							（时间）
-							<input type="text" style={{'width':'200px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'200px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 							（地点）依法实施道路运输检查时，发现车辆号码为
-							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 							的车辆在从事道路运输活动，没有按照《中华人民共和国道路运输条例》第二十四条的规定提供《道路运输证》或其他有效证明，依据《中华人民共和国道路运输条例》第六十三条规定，决定暂扣车辆。请持本凭证到
-							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 							接受处理（联系电话
-							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa'}}/>
 							）。逾期不接受处理的，将依法作出行政处罚决定。当事人对暂扣车辆决定不服的，可根据《中华人民共和国行政复议法》或《中华人民共和国行政诉讼法》，在收到本凭证之日起六十日之内向
-							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}/>
+							<input type="text" style={{'width':'100px','border':'0','outline':'0','border-bottom':'1px solid #aaaaaa',}}/>
 							申请行政复议，也可以在三个月内向人民法院提起行政诉讼。
 						</p>
 						<div className='down clearfix'>
@@ -108,9 +108,9 @@ class Cheliang extends React.Component{
 						</div>
 						<p className='footer'>
 								行政执法机关（印章）<br/>
-								<input type="text" style={{'width':'50px','border':'0','outline':'0','outline':'0'}}/>
-							年<input type="text" style={{'width':'50px','border':'0','outline':'0','outline':'0'}}/>
-							月<input type="text" style={{'width':'50px','border':'0','outline':'0','outline':'0'}}/>
+								<input type="text" style={{'width':'50px','border':'0','outline':'0'}}/>
+							年<input type="text" style={{'width':'50px','border':'0','outline':'0'}}/>
+							月<input type="text" style={{'width':'50px','border':'0','outline':'0'}}/>
 							日
 							<br/>
 							(本文书一式两份：一份存根，一份交当事人或者代理人)

@@ -1,0 +1,17 @@
+.xunwen{
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	/*margin-bottom: 40px;*/
+}
+.xunwen .content{
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+	outline: 0;
+	/*outline:1px solid #aaaaaa;*/
+	margin-bottom: 20px;
+}
+.xunwen p{
+	margin-top: 20px;
+}

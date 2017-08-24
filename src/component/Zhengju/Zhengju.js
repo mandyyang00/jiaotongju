@@ -18,45 +18,45 @@ class Zhengju extends React.Component{
 							<td rowSpan='7' className='title'>当<br/>事<br/>人</td>
 							<td rowSpan="3" className='title'>公民</td>
 							<td className='small'>姓名</td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 							<td  className='small'>性别</td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 							<td  className='small'>年龄</td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 						</tr>
 						<tr>
 							<td  className='small'>电话</td>
-							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}/></td>
+							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outLine':'0'}}/></td>
 							<td  className='small'>职业</td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 						</tr>
 						<tr>
 							<td className='small'>住址</td>
-							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}/></td>
+							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outLine':'0'}}/></td>
 							<td ></td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 						</tr>
 						<tr>
 							<td rowSpan="4" className='title'>法人<br/>或者<br/>其他<br/>组织</td>
 							<td  className='small'>名称</td>
-							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}/></td>
+							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outLine':'0'}}/></td>
 							<td></td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 						</tr>
 						<tr>
 							<td  className='small'>地址</td>
-							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}/></td>
+							<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outLine':'0'}}/></td>
 							<td></td>
-							<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}/></td>
+							<td><input type="text" style={{'width':'240px','border':'0','outLine':'0'}}/></td>
 						</tr>
 						<tr>
 							<td  className='small' style={{'width':'80px'}}>法人代表</td>
-							<td colSpan="5"><input type="text" style={{'width':'800px','border':'0','outline':'0'}}/></td>
+							<td colSpan="5"><input type="text" style={{'width':'800px','border':'0','outLine':'0'}}/></td>
 							
 						</tr>
 						<tr>
 							<td  className='small'>联系电话</td>
-							<td colSpan="5"><input type="text"  style={{'width':'800px','border':'0','outline':'0'}}/></td>
+							<td colSpan="5"><input type="text"  style={{'width':'800px','border':'0','outLine':'0'}}/></td>
 							
 						</tr>
 
@@ -88,9 +88,9 @@ class Zhengju extends React.Component{
 				</div>
 				<p className='footer'>
 				行政执法机关（印章）<br/>
-				<input type="text" style={{'width':'50px','border':'0','outline':'0','outline':'0'}}/>
-						年<input type="text" style={{'width':'50px','border':'0','outline':'0','outline':'0'}}/>
-						月<input type="text" style={{'width':'50px','border':'0','outline':'0','outline':'0'}}/>
+				<input type="text" style={{'width':'50px','border':'0','outline':'0'}}/>
+						年<input type="text" style={{'width':'50px','border':'0','outline':'0'}}/>
+						月<input type="text" style={{'width':'50px','border':'0','outline':'0'}}/>
 						日
 						<br/>
 						(本文书一式两份：一份存根，一份交当事人或者代理人)
