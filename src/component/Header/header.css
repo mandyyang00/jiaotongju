@@ -11,13 +11,22 @@
 	margin-top:20px;
 }
 .header h1{
-	/*line-height: 50px;*/
+	line-height: 100px;
 }
 .header ul li {
 	float:left;
-	width: 100px;
-	border:1px solid #aaaaaa;
+	width: 120px;
+	/*border:1px solid #aaaaaa;*/
 	line-height: 30px;
-	border-radius: 5px;
+	
 	/*background-color: reallight;*/
+}
+.header ul li button{
+	width: 120px;
+	border-radius: 5px;
+}
+.header div li{
+	list-style: none;
+	text-align:left;
+	margin-top: 20px;
 }

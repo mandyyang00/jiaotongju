@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './cheliang.css'
+import {Link} from 'react-router-dom'
 
 
 
@@ -120,6 +121,7 @@ class Cheliang extends React.Component{
 
 
 					</div>
+					<Link to='./lian'><button>返回</button></Link>
 			</div>
 			)
 	}

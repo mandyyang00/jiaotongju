@@ -1,10 +1,16 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './lian.css'
-
+import { connect } from 'react-redux'
+import axios from 'axios'
+import {Link} from 'react-router-dom'
+import {url} from '../config'
 
 
 class Lian extends React.Component{
+	// componentDidMount(){
+	// 	axios.post(`${url}/)
+	// }
 	render(){
 		return(
 			<div className='lian'>
@@ -137,11 +143,24 @@ class Lian extends React.Component{
 					
 					
 					
-					// <button type='submit'>提交</button>
+					
 				</div>
+				<Link to='./xianchangbilu'><button type='submit'>现场笔录</button></Link>
+				<Link to='./xunwenbilu'><button type='submit'>询问笔录</button></Link>
+				<Link to='./zhengju'><button type='submit'>证据登记保存清单</button></Link>
+				<Link to='./cheliang'><button type='submit'>车辆暂扣凭证</button></Link>
+				<Link to='./yijianshu'><button type='submit'>提交</button></Link>
+				<Link to='./lianlist'><button>返回</button></Link>
 			</div>
 		)
 	}
 }
+
+
+// const mapStateToProps = (state) => ({
+//   currentUser: state.account.currentUser,
+//   isAuthenticated: state.account.isAuthenticated
+// })
+// export default connect(mapStateToProps)(Sidebar)
 
 export default Lian

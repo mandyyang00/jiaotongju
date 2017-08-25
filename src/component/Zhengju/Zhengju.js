@@ -7,6 +7,7 @@ import {
 
 
 
+
 class Zhengju extends React.Component{
 	render(){
 		return(
@@ -97,6 +98,7 @@ class Zhengju extends React.Component{
 
 
 				</p>
+				<Link to='./lian'><button>返回</button></Link>
 			</div>
 		)
 	}

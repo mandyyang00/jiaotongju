@@ -1,11 +1,12 @@
 import React from 'react'
 import {Input, Button,message, } from 'antd';
 // import Header from '../Header/Header'
-import {Link} from 'react-router-dom'
+import {Link,BrowserRouter as Router} from 'react-router-dom'
 import './login.css'
 import axios from 'axios'
 import {url} from '../config'
 import { connect } from 'react-redux'
+// import store from '../../redux/store'
 
 
 
@@ -16,7 +17,7 @@ class Login extends React.Component{
 	constructor(){
 		super()
 		this.state={
-			userId:null
+			visiabl:false
 		}
 	
 	}
@@ -34,9 +35,10 @@ class Login extends React.Component{
 			axios.post(`${url}/Login`,data1)
 				.then(res=>{
 					this.dataOk(res)
-					this.props.dispatch({type:'LOGIN',})
+
+					
 				})
-				.catch(err=>alert('登陆错误'))
+				.catch(err=>console.log(err))
 
 			
 		}else{
@@ -54,10 +56,12 @@ class Login extends React.Component{
 			message.error(res.data.Message)
 		}else if(res.data.Code===2){
 			console.log(res)
+			this.setState({visibal:true})
+			this.props.dispatch({type:'LOGIN',userId:res.data.Data.ID})
+			sessionStorage.setItem('userId',res.data.Data.ID)
+			console.log(res.data.Data.ID)
 			
-			this.setState({userId:res.data.Data.ID})
-			sessionStorage.setItem('userId',this.state.userId)
-			console.log(this.state)
+					
 		}
 	}
 
@@ -82,27 +86,34 @@ class Login extends React.Component{
 		'backgroundColor':'#49a9ee',
 		'border':'0'
 	}
-	let {userId} =this.state
+	
+	let {visibal} =this.state
 	// console.log(visibal)
 	
     return (
 
 
       <div className='login'>	
-      	{userId!=null ? '' :
+      	
 				<div>
       		
 	      	<h1>秦皇岛市交通局执法系统</h1>
 	      	<div className="text" >
-		         <Input placeholder="账号" style={style} className='account'/ >
+		         <Input placeholder="账号" style={style} className='account' />
 		        	<Input placeholder="密码" style={style} className='password'/>
 		      </div>
-
-		     	<Link to='lian:id'>
-		      	<Button type="button" style={styleButton} onClick={this.onClick.bind(this)}>登录</Button>
-		      </Link>
+				{visibal 
+					?
+					<Link  to='/lianlist'>
+			      	<Button type="button" style={styleButton}  >登录
+			      	</Button>
+		     		</Link>
+		     		:
+		      	<Button type="button" style={styleButton} onClick={this.onClick.bind(this)} >登录</Button>
+		    }
+		     	
 		  
-			</div>}
+			</div>
       	
 
       	
@@ -111,4 +122,4 @@ class Login extends React.Component{
     )
   }
 }
-export default Login
+export default connect(null)(Login)

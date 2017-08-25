@@ -1,6 +1,7 @@
 import React from 'react'
 import './xunwenbilu.css'
 import Header from '../Header/Header'
+import {Link} from 'react-router-dom'
 
 
 
@@ -96,6 +97,7 @@ class Xunwenbilu extends React.Component{
 					</p>
 
 				</div>
+				<Link to='./lian'><button>返回</button></Link>
 			</div>
 		)
 	}

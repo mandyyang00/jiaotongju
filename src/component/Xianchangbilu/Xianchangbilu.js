@@ -1,6 +1,7 @@
 import React from 'react'
 import './xianchangbilu.css'
 import Header from '../Header/Header'
+import {Link} from 'react-router-dom'
 
 
 
@@ -144,6 +145,7 @@ class Xianchangbilu extends React.Component{
 					
 				</table>
 				</div>
+				<Link to='./lian'><button>返回</button></Link>
 			</div>
 		)
 	}

@@ -8,6 +8,7 @@ import Cheliang from './component/Cheliang/Cheliang'
 import Yijianshu from './component/Yijianshu/Yijianshu'
 import Xianchangbilu from './component/Xianchangbilu/Xianchangbilu'
 import Xunwenbilu from './component/Xunwenbilu/Xunwenbilu'
+import LianList from './component/lianList/lianList'
 import 'antd/dist/antd.css';
 import './App.css'
 import {
@@ -20,13 +21,18 @@ import store from './redux/store'
 
 
 class App extends React.Component {
+
   render() {
     return (
+      <Provider store={store}>
     	<HashRouter>
+
 	    	<div className='app'>
 	      	<div>
+             <Route path='/lianlist' exact component={LianList} />
 	      		<Route path='/' exact component={Login} />
-	        	<Route path='/lian:id' exact component={Lian} />
+            
+	        	<Route path='/lian' exact component={Lian} />
             <Route path='/zhengju' exact component={Zhengju} />
             <Route path='/zhengju/zhengjulist' exact component={Zhengjulist} />
             <Route path='/cheliang' exact component={Cheliang}/>
@@ -36,6 +42,7 @@ class App extends React.Component {
 	      	</div>
 	      </div>
       </HashRouter>
+      </Provider>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import './yijianshu.css'
 import Header from '../Header/Header'
+import {Link} from 'react-router-dom'
 
 
 
@@ -226,6 +227,7 @@ class Yijianshu extends React.Component{
 
 
 					</div>
+					<Link to='./lian'><button>返回</button></Link>
 				</div>
       	
 		)
