@@ -29,7 +29,7 @@ class LianList extends React.Component{
 
 	render(){
 		let {data}=this.state
-		console.log(data.length)
+		console.log(data)
 
 		return(
 			
@@ -51,24 +51,20 @@ class LianList extends React.Component{
 						
 					{data.length===0 ? '加载中': 
 					data.map(item=>	
+					
 					<tbody key={item.ID}>
 						<tr>
-							<td>{item.index}</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td style={{'width':'50px'}}>{item.index}</td>
+							<Link to='/lian'><td style={{'width':'100px'}}>{item.Code1}</td ></Link>
+							<td style={{'width':'200px'}}></td>
+							<td style={{'width':'300px'}}></td>
+							<td style={{'width':'150px'}}></td>
+							<td style={{'width':'100px'}}></td>
+							<td style={{'width':'50px'}}></td>
 						</tr>
 
-						
-
-						
-					
-							
-						
-					</tbody>)}
+					</tbody>
+					)}
 						
 				</table>
 
