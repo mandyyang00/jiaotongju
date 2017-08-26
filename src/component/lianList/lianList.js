@@ -10,14 +10,29 @@ import {Link} from 'react-router-dom'
 
 
 class LianList extends React.Component{
-	
+	constructor(){
+		super()
+		this.state={
+			data:[]
+		}
+	}
+	componentDidMount(){
+		axios.post(`${url}/FilingService/GetList`)
+			.then(res=>
+				this.setState({data:res.data})
+				
+			)
+			.catch(err=>console.log(err))
+	}
 
 
 
 	render(){
-
+		let {data}=this.state
+		console.log(data.length)
 
 		return(
+			
 			<div className='lianlist' style={{'margin':'0 auto'}}>
 				<h1>	清单</h1>
 				
@@ -34,16 +49,17 @@ class LianList extends React.Component{
 						</tr>
 					</thead>
 						
-						
-					<tbody>
+					{data.length===0 ? '加载中': 
+					data.map(item=>	
+					<tbody key={item.ID}>
 						<tr>
-							<td>1</td>
-							<td>立案审批表</td>
+							<td>{item.index}</td>
 							<td></td>
 							<td></td>
 							<td></td>
 							<td></td>
-							<td><Link to='/lian'><button>查询</button></Link></td>
+							<td></td>
+							<td></td>
 						</tr>
 
 						
@@ -52,12 +68,14 @@ class LianList extends React.Component{
 					
 							
 						
-					</tbody>
+					</tbody>)}
 						
 				</table>
 
 
 			</div>
+			
+			
 			)
 	}
 }

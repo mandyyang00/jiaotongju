@@ -6,7 +6,7 @@
 	padding-left: 10px;
 
 }
-.header ul{
+/*.header ul{
 	list-style: none;
 	margin-top:20px;
 }
@@ -16,17 +16,17 @@
 .header ul li {
 	float:left;
 	width: 120px;
-	/*border:1px solid #aaaaaa;*/
+	
 	line-height: 30px;
 	
-	/*background-color: reallight;*/
+	
 }
 .header ul li button{
 	width: 120px;
 	border-radius: 5px;
-}
-.header div li{
+}*/
+/*.header div li{
 	list-style: none;
 	text-align:left;
 	margin-top: 20px;
-}
+}*/
