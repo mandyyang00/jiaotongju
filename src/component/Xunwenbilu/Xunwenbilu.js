@@ -5,7 +5,9 @@ import {Link} from 'react-router-dom'
 
 
 
+
 class Xunwenbilu extends React.Component{
+	
 	render(){
 		return(
 			<div className='xunwen'>
@@ -104,5 +106,4 @@ class Xunwenbilu extends React.Component{
 }
 
 
-
-export default Xunwenbilu
+export default Xunwembilu
