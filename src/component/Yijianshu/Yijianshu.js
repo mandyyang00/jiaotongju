@@ -11,7 +11,8 @@ class Yijianshu extends React.Component{
 		return(
       
 				<div className='yijianshu'>
-					<Header title='案件处理意见书'></Header>
+				<Header></Header>
+					<h1>案件处理意见书</h1>
 					<div className='content'>
 						<table>
 							<tr>

@@ -11,7 +11,8 @@ class Xunwenbilu extends React.Component{
 	render(){
 		return(
 			<div className='xunwen'>
-				<Header title='询问笔录'></Header>
+			<Header></Header>
+				<h1>询问笔录</h1>
 				<div className='content'>
 					<p>
 						时间：
@@ -106,4 +107,4 @@ class Xunwenbilu extends React.Component{
 }
 
 
-export default Xunwembilu
+export default Xunwenbilu

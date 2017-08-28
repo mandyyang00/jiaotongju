@@ -13,13 +13,29 @@ class LianList extends React.Component{
 	constructor(){
 		super()
 		this.state={
-			data:[]
+			data:[],
+			lianPCid:null
 		}
 	}
 	componentDidMount(){
+
 		axios.post(`${url}/FilingService/GetList`)
 			.then(res=>
-				this.setState({data:res.data})
+				this.chaXun(res)
+				
+			)
+			.catch(err=>console.log(err))
+	}
+	chaXun(res){
+		this.setState({
+			data:res.data
+		})
+	}
+
+	handleClick(ID,event){
+		axios.post(`${url}/FilingService/GetList`,{ID:ID})
+			.then(res=>
+				console.log(res)
 				
 			)
 			.catch(err=>console.log(err))
@@ -34,7 +50,8 @@ class LianList extends React.Component{
 		return(
 			
 			<div className='lianlist' style={{'margin':'0 auto'}}>
-				<h1>	清单</h1>
+			<Header></Header>
+				<h1>清单</h1>
 				
 				<table>
 					<thead>
@@ -50,17 +67,22 @@ class LianList extends React.Component{
 					</thead>
 						
 					{data.length===0 ? '加载中': 
-					data.map(item=>	
+					data.map((item,index)=>	
 					
 					<tbody key={item.ID}>
 						<tr>
-							<td style={{'width':'50px'}}>{item.index}</td>
-							<Link to='/lian'><td style={{'width':'100px'}}>{item.Code1}</td ></Link>
-							<td style={{'width':'200px'}}></td>
-							<td style={{'width':'300px'}}></td>
-							<td style={{'width':'150px'}}></td>
-							<td style={{'width':'100px'}}></td>
-							<td style={{'width':'50px'}}></td>
+							<td style={{'width':'50px'}}>{index+1}</td>
+							<td style={{'width':'100px'}}>立案审批表</td >
+							<td style={{'width':'200px'}}>{item.AcceptTime}</td>
+							<td style={{'width':'300px'}}>{item.Reason}</td>
+							<td style={{'width':'150px'}}>{item.ManagerSign}</td>
+							<td style={{'width':'100px'}}>{item.Memo}</td>
+							<td style={{'width':'50px'}}>
+								<Link to='/lian'>
+									<button style={{'lineHeight':'25px','width':'45px'}} onClick={this.handleClick.bind(this,item.ID)}>查询
+									</button>
+								</Link>
+							</td>
 						</tr>
 
 					</tbody>

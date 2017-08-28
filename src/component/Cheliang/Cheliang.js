@@ -9,7 +9,8 @@ class Cheliang extends React.Component{
 	render(){
 		return(
 			<div className='cheliang'>
-				<Header title='车辆暂扣凭证'></Header>
+				<Header></Header>
+				<h1>车辆暂扣凭证</h1>
 				<div className='title'>
 					<input type="text"/>
 					<span> 罚案</span>

@@ -10,7 +10,8 @@ class Zhengjulist extends React.Component{
 	render(){
 		return(
 			<div className='list'>
-				<Header title='证据保存清单'></Header>
+			
+				<h1>证据保存清单</h1>
 				<div>
 					<table>
 						<tr>

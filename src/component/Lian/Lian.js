@@ -15,7 +15,8 @@ class Lian extends React.Component{
 		}
 	}
 	componentDidMount(){
-		axios.post(`${url}/FilingService/GetList`)
+
+		axios.post(`${url}/FilingService/GetFiling`)
 			.then(res=>
 				this.setState({data:res.data})
 				
@@ -27,7 +28,8 @@ class Lian extends React.Component{
 		console.log(data)
 		return(
 			<div className='lian'>
-				<Header title='立案审批表'></Header>
+				<Header></Header>
+				<h1>立案审批表</h1>
 				{data.length===0 ? '加载中' :
 				data.map(item=>
 				<div key={item.ID }>

@@ -9,7 +9,8 @@ class Xianchangbilu extends React.Component{
 	render(){
 		return(
 			<div className='xianchang'>
-				<Header title='现场笔录'></Header>
+			<Header></Header>
+				<h1>现场笔录</h1>
 				<div className='content'>
 				<table>
 					<tr>

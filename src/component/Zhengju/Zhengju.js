@@ -12,7 +12,8 @@ class Zhengju extends React.Component{
 	render(){
 		return(
 			<div className='zhengju'>
-				<Header title='证据登记保存清单'></Header>
+			<Header></Header>
+				<h1>证据登记保存清单</h1>
 				<div type='submit' style={{'margin':'0 auto'}}>
 					<table className='table'>
 						<tr>
