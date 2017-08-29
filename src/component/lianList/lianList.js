@@ -32,14 +32,18 @@ class LianList extends React.Component{
 		})
 	}
 
-	handleClick(ID,event){
-		axios.post(`${url}/FilingService/GetList`,{ID:ID})
+	handleClick(aa,event){
+		console.log(aa)
+		axios.post(`${url}/FilingService/GetFiling`,{ID:aa})
 			.then(res=>
-				console.log(res)
+				this.setState({lianPCid:res.data.ID})
 				
 			)
 			.catch(err=>console.log(err))
+
+		sessionStorage.setItem('lianPCid',aa)
 	}
+
 
 
 
