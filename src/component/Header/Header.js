@@ -8,6 +8,9 @@ import {Link} from 'react-router-dom'
 class Header extends React.Component{
 	loginOut(){
 		sessionStorage.setItem('userId','')
+		sessionStorage.setItem('lianPCid','')
+		sessionStorage.setItem('xianchangId','')
+		sessionStorage.setItem('xunwenId','')
 	}
 	render(){
 		return(

@@ -1,6 +1,9 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './zhengjulist.css'
+import {
+  Link
+} from 'react-router-dom'
 
 
 
@@ -71,7 +74,7 @@ class Zhengjulist extends React.Component{
 						</tr>
 					</table>
 				</div>
-				
+				<Link to='/zhengju'><button>返回</button></Link>
 			</div>
 		)
 	}
