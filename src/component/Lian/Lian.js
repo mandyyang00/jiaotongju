@@ -157,12 +157,12 @@ class Lian extends React.Component{
 							<td>受案<br/>机构<br/>意见</td>
 							<td colSpan='2'>
 								<textarea name="" id="" cols="30" rows="4"
-									 style={{'width':'300px','border':'0','outline':'0'}}  value={data.AcceptContent}></textarea>
+									 style={{'width':'300px','border':'0','outline':'0'}}  readOnly='readonly'></textarea>
 								<p style={{'textIndent':'150px','lineHeight':'20px'}}>签名:
-											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} value={data.AcceptSign}/>
+											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} readOnly='readonly'/>
 								</p>
 								<p style={{'textIndent':'150px','lineHeight':'20px'}}>时间:
-											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} value={data.AcceptSignTime}/>
+											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} readOnly='readonly'/>
 								</p>
 								
 							</td>
@@ -171,12 +171,12 @@ class Lian extends React.Component{
 							<td>负<br/>责<br/>人<br/>审<br/>批<br/>意<br/>见</td>
 							<td colSpan='7'>
 								<textarea name="" id="" cols="30" rows="5"
-									 style={{'width':'900px','border':'0','outline':'0'}} value={data.ManagerContent}></textarea>
+									 style={{'width':'900px','border':'0','outline':'0'}} readOnly='readonly'></textarea>
 								<p style={{'textIndent':'650px','lineHeight':'20px'}}>签名:
-											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} value={data.ManagerSign}/>
+											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} readOnly='readonly'/>
 								</p>
 								<p style={{'textIndent':'650px','lineHeight':'20px'}}>时间:
-											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} value={data.ManageSignTime}/>
+											<input type="text"  style={{'width':'100px','border':'0','outline':'0'}} readOnly='readonly'/>
 								</p>
 							</td>
 						</tr>

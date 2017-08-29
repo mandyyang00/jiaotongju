@@ -3,7 +3,6 @@ import Login from './component/Login/Login'
 import Header from './component/Header/Header'
 import Lian from './component/Lian/Lian'
 import Zhengju from './component/Zhengju/Zhengju'
-import Zhengjulist from './component/Zhengjulist/Zhengjulist'
 import Cheliang from './component/Cheliang/Cheliang'
 import Yijianshu from './component/Yijianshu/Yijianshu'
 import Xianchangbilu from './component/Xianchangbilu/Xianchangbilu'
@@ -41,7 +40,7 @@ class App extends React.Component {
 	      		<Route path='/lianlist' exact component={LianList} />
 	        	<Route path='/lian' exact component={Lian} />
             <Route path='/zhengju' exact component={Zhengju} />
-            <Route path='/zhengju/zhengjulist' exact component={Zhengjulist} />
+            
             <Route path='/cheliang' exact component={Cheliang}/>
             <Route path='/yijianshu' exact component={Yijianshu}/>
             <Route path='/xianchangbilu' exact component={Xianchangbilu}/>
