@@ -197,9 +197,9 @@ class Lian extends React.Component{
 
 				
 				
-				<Link to='./xianchangbilu'><button>现场笔录</button></Link>
-				<Link to='./xunwenbilu'><button>询问笔录</button></Link>
-				<Link to='./zhengju'><button>证据登记保存清单</button></Link>
+				<Link to='./xianchangbilu'><button>查询现场笔录</button></Link>
+				<Link to='./xunwenbilu'><button>查询询问笔录</button></Link>
+				<Link to='./zhengju'><button>新增证据登记保存清单</button></Link>
 				<Link to='./cheliang'><button>车辆暂扣凭证</button></Link>
 				<Link to='./yijianshu'><button>提交</button></Link>
 				<Link to='./lianlist'><button onClick={this.goBack.bind(this)}>返回</button></Link>

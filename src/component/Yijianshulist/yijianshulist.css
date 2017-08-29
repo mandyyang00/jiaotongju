@@ -1,0 +1,21 @@
+.yijianshulist{
+	width: 1000px;
+	margin: 0 auto;
+
+}
+.yijianshulist h1{
+	line-height: 100px;
+	text-align: center;
+}
+.yijianshulist table{
+	border-collapse:collapse;
+}
+
+.yijianshulist td{
+	bottom: 0;
+	outline: 0;
+	border:1px solid #aaaaaa;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}

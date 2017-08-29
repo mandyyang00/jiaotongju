@@ -9,6 +9,7 @@ import Yijianshu from './component/Yijianshu/Yijianshu'
 import Xianchangbilu from './component/Xianchangbilu/Xianchangbilu'
 import Xunwenbilu from './component/Xunwenbilu/Xunwenbilu'
 import LianList from './component/lianList/lianList'
+import Yijianshulist from './component/Yijianshulist/Yijianshulist'
 import 'antd/dist/antd.css';
 import './App.css'
 import {
@@ -22,16 +23,22 @@ import store from './redux/store'
 
 class App extends React.Component {
 
+
   render() {
     return (
       <Provider store={store}>
     	<HashRouter>
 
 	    	<div className='app'>
-	      	<div>
-             <Route path='/lianlist' exact component={LianList} />
-	      		<Route path='/' exact component={Login} />
+          
+          <div>
+            <Route path='/' exact component={Login} />
+            <Route path='/yijianshulist' component={Yijianshulist} />
+          
+
+	      	
             
+	      		<Route path='/lianlist' exact component={LianList} />
 	        	<Route path='/lian' exact component={Lian} />
             <Route path='/zhengju' exact component={Zhengju} />
             <Route path='/zhengju/zhengjulist' exact component={Zhengjulist} />

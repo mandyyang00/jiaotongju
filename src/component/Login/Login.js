@@ -6,7 +6,7 @@ import './login.css'
 import axios from 'axios'
 import {url} from '../config'
 import { connect } from 'react-redux'
-// import store from '../../redux/store'
+
 
 
 
@@ -105,7 +105,7 @@ class Login extends React.Component{
 				{visibal 
 					?
 					<Link  to='/lianlist'>
-			      	<Button type="button" style={styleButton}  >登录
+			      	<Button type="button" style={styleButton}>登录
 			      	</Button>
 		     		</Link>
 		     		:
