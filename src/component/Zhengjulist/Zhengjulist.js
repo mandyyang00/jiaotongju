@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import {url} from '../config'
 import axios from 'axios'
-import { Modal, Button } from 'antd';
+import { Modal, Button,message } from 'antd';
 
 
 
@@ -17,7 +17,7 @@ class Zhengjulist extends React.Component{
 		super()
 		this.state={
 			visibal:false,
-			data:nul
+			data:null
 		}
 	}
 	handleOk = (e) => {
@@ -31,13 +31,38 @@ class Zhengjulist extends React.Component{
 		let seconds1=document.querySelector('.seconds1').value
 		let adress1=document.querySelector('.adress1').value
 		let ID=sessionStorage.zhengjuId
-		axios.post(`${url}/`,)
-			.then(res=>this.textOk(res))
-			.catch(err=>console.log(err))
+		// console.log(name1)
+		let data1={
+			EvidenceID:ID,
+			Name:name1,
+			Rule:guige1,
+			Quantity:seconds1,
+			Place:adress1
+		}
+		if(
+				index1.length!==0 && index1.trim()!=='' &&
+				name1.length!==0 && name1.trim()!=='' &&
+				guige1.length!==0 && guige1.trim()!=='' &&
+				seconds1.length!==0 && seconds1.trim()!=='' &&
+				adress1.length!==0 && adress1.trim()!=='' 
+			){
+				axios.post(`${url}/EvidenceService/AddDetail`,data1)
+					.then(res=>this.textOk(res))
+					.catch(err=>console.log(err))
+		}else{
+			message.error('资料不完整')
+		}
+		document.querySelector('.index1').value=''
+		document.querySelector('.name1').value=''
+		document.querySelector('.guige1').value=''
+		document.querySelector('.seconds1').value=''
+		document.querySelector('.adress1').value=''
+
+		
   }
 
   textOk(res){
-
+		console.log(res)
   }
 
   handleCancel = (e) => {
@@ -45,6 +70,11 @@ class Zhengjulist extends React.Component{
     this.setState({
       visible: false,
     });
+    document.querySelector('.index1').value=''
+		document.querySelector('.name1').value=''
+		document.querySelector('.guige1').value=''
+		document.querySelector('.seconds1').value=''
+		document.querySelector('.adress1').value=''
   }
 
 	showModal = () => {

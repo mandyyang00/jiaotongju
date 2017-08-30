@@ -95,40 +95,7 @@ class Zhengju extends React.Component{
 
 	}
 
-	baoCunzhengju(){
-		let index1=document.querySelector('.index1').value
-		let index2=document.querySelector('.index2').value
-		let index3=document.querySelector('.index3').value
-		let index4=document.querySelector('.index4').value
-		let index5=document.querySelector('.index5').value
-		let index6=document.querySelector('.index6').value
-		let names1=document.querySelector('.names1').value
-		let names2=document.querySelector('.names2').value
-		let names3=document.querySelector('.names3').value
-		let names4=document.querySelector('.names4').value
-		let names5=document.querySelector('.names5').value
-		let names6=document.querySelector('.names6').value
-		let guige1=document.querySelector('.guige1').value
-		let guige2=document.querySelector('.guige2').value
-		let guige3=document.querySelector('.guige3').value
-		let guige4=document.querySelector('.guige4').value
-		let guige5=document.querySelector('.guige5').value
-		let guige6=document.querySelector('.guige6').value
-		let seconds1=document.querySelector('.seconds1').value
-		let seconds2=document.querySelector('.seconds2').value
-		let seconds3=document.querySelector('.seconds3').value
-		let seconds4=document.querySelector('.seconds4').value
-		let seconds5=document.querySelector('.seconds5').value
-		let seconds6=document.querySelector('.seconds6').value
-		let place1=document.querySelector('.place1').value
-		let place2=document.querySelector('.place2').value
-		let place3=document.querySelector('.place3').value
-		let place4=document.querySelector('.place4').value
-		let place5=document.querySelector('.place5').value
-		let place6=document.querySelector('.place6').value
-		
-	}
-
+	
 	render(){
 		let {data}=this.state
 		return(
