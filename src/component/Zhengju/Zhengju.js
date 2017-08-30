@@ -98,6 +98,7 @@ class Zhengju extends React.Component{
 	
 	render(){
 		let {data}=this.state
+		console.log(data)
 		return(
 			<div className='zhengju'>
 			<Header></Header>
@@ -163,7 +164,7 @@ class Zhengju extends React.Component{
 							年<input type="text" style={{'width':'50px','border':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}} className='month'/>
 							月<input type="text" style={{'width':'50px','border':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}} className='day'/>
 							日前到<input type="text" style={{'width':'50px','border':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}  className='where'/>接受处理。
-							<Link to='zhengjulist'><button>证据清单</button></Link>
+							<Link to='zhengjulist'><button>增加证据清单</button></Link>
 							
 					</p>
 					
@@ -192,7 +193,7 @@ class Zhengju extends React.Component{
 
 					</p>
 				</div>}			
-				<button onClick={this.goBack.bind(this)}>保存并返回</button>
+				<Link to='/lian'><button onClick={this.goBack.bind(this)}>保存并返回</button></Link>
 			</div>
 		)
 	}

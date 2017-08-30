@@ -68,7 +68,7 @@ class Zhengjulist extends React.Component{
   handleCancel = (e) => {
     console.log(e);
     this.setState({
-      visible: false,
+      visible: false
     });
     document.querySelector('.index1').value=''
 		document.querySelector('.name1').value=''
@@ -79,7 +79,7 @@ class Zhengjulist extends React.Component{
 
 	showModal = () => {
     this.setState({
-      visible: true,
+      visible: true
     });
   }
  
