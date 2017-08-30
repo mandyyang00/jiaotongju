@@ -17,25 +17,40 @@ class Zhengju extends React.Component{
 		super()
 		this.state={
 			data:null,
-			zhengjuid:null,
-			data1:null
+			zhengjuId:null,
+			
 			
 		}
 	}
 	componentDidMount(){
 		let ID=sessionStorage.lianPCid
-		axios.post(`${url}/FilingService/GetFiling`,{ID:ID})
-			.then(res=>
-				this.idOk(res)
-			)
+		axios.post(`${url}/EvidenceService/AddEvidence`,{FilingID:ID})
+			.then(res=>this.handleOk(res))
 			.catch(err=>console.log(err))
+
+
+		// 
+		// axios.post(`${url}/FilingService/GetFiling`,{ID:ID})
+		// 	.then(res=>
+		// 		this.idOk(res)
+		// 	)
+		// 	.catch(err=>console.log(err))
 	}
-	idOk(res){
+	handleOk(res){
 		console.log(res)
 		this.setState({
-			data:res.data
+			data:res.data,
+			zhengjuId:res.data.ID
 		})
+		sessionStorage.setItem('zhengjuId',res.data.ID)
 	}
+
+	// idOk(res){
+	// 	console.log(res)
+	// 	this.setState({
+	// 		data:res.data
+	// 	})
+	// }
 
 	goBack(){
 		let name2=document.querySelector('.name2').value
@@ -124,45 +139,45 @@ class Zhengju extends React.Component{
 								<td rowSpan='7' className='title'>当<br/>事<br/>人</td>
 								<td rowSpan="3" className='title'>公民</td>
 								<td className='small'>姓名</td>
-								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}} value={data.InvolvedName} className='name1'/></td>
+								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}  className='name1' value={data.Filing.InvolvedName}/></td>
 								<td  className='small'>性别</td>
-								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}} value={data.InvolvedSex} className='sex'/></td>
+								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}  className='sex' value={data.Filing.InvolvedName}/></td>
 								<td  className='small'>年龄</td>
-								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}} value={data.InvolvedName}  className='old'/></td>
+								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}   className='old' value={data.Filing.InvolvedName}/></td>
 							</tr>
 							<tr>
 								<td  className='small'>电话</td>
-								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0' }} value={data.InvolvedTelNo}  className='tel1'/></td>
+								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0' }}   className='tel1' value={data.Filing.InvolvedName}/></td>
 								<td  className='small'>职业</td>
-								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}} value={data.InvolvedName}  className='work'/></td>
+								<td><input type="text" style={{'width':'240px','border':'0','outline':'0'}}   className='work' value={data.Filing.InvolvedName}/></td>
 							</tr>
 							<tr>
 								<td className='small'>住址</td>
-								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}} value={data.InvolvedAddress}  className='address1'/></td>
+								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}   className='address1' value={data.Filing.InvolvedName}/></td>
 								<td ></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td rowSpan="4" className='title'>法人<br/>或者<br/>其他<br/>组织</td>
 								<td  className='small'>名称</td>
-								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}  className='name2'/></td>
+								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}  className='name2' value={data.Filing.InvolvedName}/></td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td  className='small'>地址</td>
-								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}  className='address2'/></td>
+								<td colSpan="3"><input type="text" style={{'width':'540px','border':'0','outline':'0'}}  className='address2' value={data.Filing.InvolvedName}/></td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td  className='small' style={{'width':'80px'}}>法人代表</td>
-								<td colSpan="5"><input type="text" style={{'width':'800px','border':'0','outline':'0'}}  className='farendaibiao'/></td>
+								<td colSpan="5"><input type="text" style={{'width':'800px','border':'0','outline':'0'}}  className='farendaibiao' value={data.Filing.InvolvedName}/></td>
 								
 							</tr>
 							<tr>
 								<td  className='small'>联系电话</td>
-								<td colSpan="5"><input type="text"  style={{'width':'800px','border':'0','outline':'0'}}  className='tel2'/></td>
+								<td colSpan="5"><input type="text"  style={{'width':'800px','border':'0','outline':'0'}}  className='tel2' value={data.Filing.InvolvedName}/></td>
 								
 							</tr>
 
@@ -192,7 +207,7 @@ class Zhengju extends React.Component{
 						</p>
 
 					</div>
-
+					<div>
 					<table>
 						<tr>
 							<td style={{'width':'100px'}}>序号</td>
@@ -250,6 +265,8 @@ class Zhengju extends React.Component{
 							
 						</tr>
 					</table>
+					<button onClick={this.baoCunzhengju.bind(this)}>保存证据列表</button>
+					</div>
 					<p className='footer'>
 					行政执法机关（印章）<br/>
 					<input type="text" style={{'width':'50px','border':'0','outline':'0'}}  className='year1'/>
@@ -261,7 +278,7 @@ class Zhengju extends React.Component{
 
 
 					</p>
-				</div>}
+				</div>}			
 				<button onClick={this.goBack.bind(this)}>保存并返回</button>
 			</div>
 		)
