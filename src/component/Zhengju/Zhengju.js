@@ -69,6 +69,33 @@ class Zhengju extends React.Component{
 		let month1=document.querySelector('.month1').value
 		let day1=document.querySelector('.day1').value
 
+		
+		let ID =sessionStorage.lianPCid
+		if(
+				name2.length!==0 && name2.trim()!=='' &&
+				address2.length!==0 && address2.trim()!=='' &&
+				farendaibiao.length!==0 && farendaibiao.trim()!=='' &&
+				tel2.length!==0 && tel2.trim()!=='' &&
+				where.length!==0 && where.trim()!=='' &&
+				dangshiren.length!==0 && dangshiren.trim()!=='' &&
+				year.length!==0 && year.trim()!=='' &&
+				month.length!==0 && month.trim()!=='' &&
+				day.length!==0 && day.trim()!=='' &&
+				namesign1.length!==0 && namesign1.trim()!=='' &&
+				namesign2.length!==0 && namesign2.trim()!=='' &&
+				codeid.length!==0 && codeid.trim()!=='' &&
+				year1.length!==0 && year1.trim()!=='' &&
+				month1.length!==0 && month1.trim()!=='' &&
+				day1.length!==0 && day1.trim()!==''
+			){
+				axios.post(`${url}`,)
+		}else{
+			message.error('资料填写不完整')
+		}
+
+	}
+
+	baoCunzhengju(){
 		let index1=document.querySelector('.index1').value
 		let index2=document.querySelector('.index2').value
 		let index3=document.querySelector('.index3').value
@@ -99,30 +126,7 @@ class Zhengju extends React.Component{
 		let place4=document.querySelector('.place4').value
 		let place5=document.querySelector('.place5').value
 		let place6=document.querySelector('.place6').value
-		let ID =sessionStorage.lianPCid
-		if(
-				name2.length!==0 && name2.trim()!=='' &&
-				address2.length!==0 && address2.trim()!=='' &&
-				farendaibiao.length!==0 && farendaibiao.trim()!=='' &&
-				tel2.length!==0 && tel2.trim()!=='' &&
-				where.length!==0 && where.trim()!=='' &&
-				dangshiren.length!==0 && dangshiren.trim()!=='' &&
-				year.length!==0 && year.trim()!=='' &&
-				month.length!==0 && month.trim()!=='' &&
-				day.length!==0 && day.trim()!=='' &&
-				namesign1.length!==0 && namesign1.trim()!=='' &&
-				namesign2.length!==0 && namesign2.trim()!=='' &&
-				codeid.length!==0 && codeid.trim()!=='' &&
-				year1.length!==0 && year1.trim()!=='' &&
-				month1.length!==0 && month1.trim()!=='' &&
-				day1.length!==0 && day1.trim()!=='' &&
-				index1.length!==0 && index1.trim()!==''
-			){
-				axios.post(`${url}`,)
-		}else{
-			message.error('资料填写不完整')
-		}
-
+		
 	}
 
 	render(){
@@ -192,6 +196,7 @@ class Zhengju extends React.Component{
 							年<input type="text" style={{'width':'50px','border':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}} className='month'/>
 							月<input type="text" style={{'width':'50px','border':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}} className='day'/>
 							日前到<input type="text" style={{'width':'50px','border':'0','border-bottom':'1px solid #aaaaaa','outline':'0'}}  className='where'/>接受处理。
+							<Link to='zhengjulist'><button>证据清单</button></Link>
 							
 					</p>
 					
@@ -207,66 +212,7 @@ class Zhengju extends React.Component{
 						</p>
 
 					</div>
-					<div>
-					<table>
-						<tr>
-							<td style={{'width':'100px'}}>序号</td>
-							<td style={{'width':'350px'}}>证据名称</td>
-							<td style={{'width':'150px'}}>规格</td>
-							<td style={{'width':'100px'}}>数量</td>
-							<td style={{'width':'294px'}}>登记保存地点</td>
-						</tr>
-						<tr>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='index1'/></td>
-							<td><input type="text"   style={{'width':'350px','border':'0','outline':'0'}} className='names1'/></td>
-							<td ><input type="text"   style={{'width':'150px','border':'0','outline':'0'}} className='guige1'/></td>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='seconds1'/></td>
-							<td ><input type="text"   style={{'width':'294px','border':'0','outline':'0'}} className='place1'/></td>
-							
-						</tr>
-						<tr>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='index2'/></td>
-							<td><input type="text"   style={{'width':'350px','border':'0','outline':'0'}} className='names2'/></td>
-							<td ><input type="text"   style={{'width':'150px','border':'0','outline':'0'}} className='guige2'/></td>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='seconds2'/></td>
-							<td ><input type="text"   style={{'width':'294px','border':'0','outline':'0'}} className='place2'/></td>
-							
-						</tr>
-						<tr>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='index3'/></td>
-							<td><input type="text"   style={{'width':'350px','border':'0','outline':'0'}} className='names3'/></td>
-							<td ><input type="text"   style={{'width':'150px','border':'0','outline':'0'}} className='guige3'/></td>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='seconds3'/></td>
-							<td ><input type="text"   style={{'width':'294px','border':'0','outline':'0'}} className='place3'/></td>
-							
-						</tr>
-						<tr>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='index4'/></td>
-							<td><input type="text"   style={{'width':'350px','border':'0','outline':'0'}} className='names4'/></td>
-							<td ><input type="text"   style={{'width':'150px','border':'0','outline':'0'}} className='guige4'/></td>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='seconds4'/></td>
-							<td ><input type="text"   style={{'width':'294px','border':'0','outline':'0'}} className='place4'/></td>
-							
-						</tr>
-						<tr>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='index5'/></td>
-							<td><input type="text"   style={{'width':'350px','border':'0','outline':'0'}} className='names5'/></td>
-							<td ><input type="text"   style={{'width':'150px','border':'0','outline':'0'}} className='guige5'/></td>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='seconds5'/></td>
-							<td ><input type="text"   style={{'width':'294px','border':'0','outline':'0'}} className='place5'/></td>
-							
-						</tr>
-						<tr>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='index6'/></td>
-							<td><input type="text"   style={{'width':'350px','border':'0','outline':'0'}} className='names6'/></td>
-							<td ><input type="text"   style={{'width':'150px','border':'0','outline':'0'}} className='guige6'/></td>
-							<td><input type="text"   style={{'width':'100px','border':'0','outline':'0'}} className='seconds6'/></td>
-							<td ><input type="text"   style={{'width':'294px','border':'0','outline':'0'}} className='place6'/></td>
-							
-						</tr>
-					</table>
-					<button onClick={this.baoCunzhengju.bind(this)}>保存证据列表</button>
-					</div>
+				
 					<p className='footer'>
 					行政执法机关（印章）<br/>
 					<input type="text" style={{'width':'50px','border':'0','outline':'0'}}  className='year1'/>

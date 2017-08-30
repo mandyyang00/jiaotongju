@@ -9,6 +9,7 @@ import Xianchangbilu from './component/Xianchangbilu/Xianchangbilu'
 import Xunwenbilu from './component/Xunwenbilu/Xunwenbilu'
 import LianList from './component/lianList/lianList'
 import Yijianshulist from './component/Yijianshulist/Yijianshulist'
+import Zhengjulist from './component/Zhengjulist/Zhengjulist'
 import 'antd/dist/antd.css';
 import './App.css'
 import {
@@ -33,14 +34,10 @@ class App extends React.Component {
           <div>
             <Route path='/' exact component={Login} />
             <Route path='/yijianshulist' component={Yijianshulist} />
-          
-
-	      	
-            
-	      		<Route path='/lianlist' exact component={LianList} />
+            <Route path='/lianlist' exact component={LianList} />
 	        	<Route path='/lian' exact component={Lian} />
             <Route path='/zhengju' exact component={Zhengju} />
-            
+            <Route path='/zhengjulist' exact component={Zhengjulist} />
             <Route path='/cheliang' exact component={Cheliang}/>
             <Route path='/yijianshu' exact component={Yijianshu}/>
             <Route path='/xianchangbilu' exact component={Xianchangbilu}/>

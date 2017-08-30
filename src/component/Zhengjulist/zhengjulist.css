@@ -3,7 +3,7 @@
 	margin: 0 auto;
 
 }
-.list div{
+.list .content{
 	background: white;
 	width: 100%;
 	margin: 0 auto;
@@ -20,3 +20,8 @@
 	height: 40px;
 	text-align: center;
 }
+
+/*<td ><input type="text"   style={{'height':'40px','border':'0','outline':'0'}} className='guige2'/></td>
+											<td><input type="text"   style={{'height':'40px','border':'0','outline':'0'}} className='seconds2'/></td>
+											<td ><input type="text"   style={{'height':'40px','border':'0','outline':'0'}} className='adress2'/></td>
+											<td ><input type="text"   style={{'height':'40px','border':'0','outline':'0'}} className='adress1'/></td>*/
