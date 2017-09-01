@@ -1,0 +1,30 @@
+.chufajieanbaogao{
+	width: 100%;
+}
+.chufajieanbaogao table{
+	border-collapse:collapse;
+}
+.chufajieanbaogao td{
+	border:1px solid #aaaaaa;
+	height: 40px;
+	text-align: center
+}
+.chufajieanbaogao input,textarea{
+	width: 98%;
+	border: 0;
+	outline: 0
+}
+.chufajieanbaogao .title{
+	width: 150px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #aaaaaa
+}
+
+.chufajieanbaogao  .time{
+	width: 50px;
+/*	border-bottom: 1px solid #AAAAAA*/
+}
+.chufajieanbaogao p{
+	text-align: right;
+	line-height: 30px;
+}

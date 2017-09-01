@@ -4,6 +4,7 @@ import {
   Link
 } from 'react-router-dom'
 import {Icon} from 'antd'
+import Cheliang from '../Cheliang/Cheliang'
 
 
 
@@ -33,7 +34,7 @@ class Header extends React.Component{
 				<div className='contentss clearfix'>
 					<div className='sidebarss'>
 						<ul>
-							<li><Link to='/lian'><span className='frist'><Icon type="caret-right" style={{'color':'#3A5FCD'}}/></span><span className='second'>立案审批表</span></Link></li>
+							<li><Link to='/lianlist'><span className='frist'><Icon type="caret-right" style={{'color':'#3A5FCD'}}/></span><span className='second'>立案审批表</span></Link></li>
 							<li><Link to='/xianchangbilu'><span className='frist'><Icon type="caret-right" style={{'color':'#3A5FCD'}}/></span><span className='second'>现场笔录</span></Link></li>
 							<li><Link to='/xunwenbilu'><span className='frist'><Icon type="caret-right" style={{'color':'#3A5FCD'}}/></span><span className='second'>询问笔录</span></Link></li>
 							<li><Link to='/zhengju'><span className='frist'><Icon type="caret-right" style={{'color':'#3A5FCD'}}/></span><span className='second'>证据登记保存清单</span></Link></li>
@@ -49,7 +50,7 @@ class Header extends React.Component{
 						</ul>
 					</div>
 					<div className='content1ss'>
-						<p><i>秦皇岛市交通运输<br/>行政执法系统</i></p>
+						<Cheliang></Cheliang>
 						
 			         
 					</div>

@@ -12,7 +12,7 @@ import LianList from './component/lianList/lianList'
 import Yijianshulist from './component/Yijianshulist/Yijianshulist'
 import Zhengjulist from './component/Zhengjulist/Zhengjulist'
 import Zelinggaizhengtongzhishu from './component/Zelinggaizhengtongzhishu/Zelinggaizhengtongzhishu'
-import Anjianchuliyijianshu from './component/Anjianchuliyijianshu/Anjianchuliyijianshu'
+
 import Chufajieanbaogao from './component/Chufajieanbaogao/Chufajieanbaogao'
 import Jiaotongweifaxingweidiaochabaogao from './component/Jiaotongweifaxingweidiaochabaogao/Jiaotongweifaxingweidiaochabaogao'
 import Jiaotongxingzhengzhifaanjianjieanbaogao from './component/Jiaotongxingzhengzhifaanjianjieanbaogao/Jiaotongxingzhengzhifaanjianjieanbaogao'
@@ -30,11 +30,11 @@ import {
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import './component/Header/header.css'
+import {connect} from 'react-redux'
 
 
 
 class App extends React.Component {
-
 
   render() {
     return (
@@ -58,6 +58,12 @@ class App extends React.Component {
             <Route path='/nav' component={Nav} />
             <Route path='/header' component={Header} />
             <Route path='/zelinggaizhengtongzhishu' component={Zelinggaizhengtongzhishu} />
+           
+            <Route path='/chufajieanbaogao' component={Chufajieanbaogao} />
+            <Route path='/jiaotongweifaxingweidiaochabaogao' component={Jiaotongweifaxingweidiaochabaogao} />
+            <Route path='/jiaotongxingzhengzhifaanjianjieanbaogao' component={Jiaotongxingzhengzhifaanjianjieanbaogao} />
+            <Route path='/weifaxingweitongzhishu' component={Weifaxingweitongzhishu} />
+            <Route path='/wenshusongdahuizheng' component={Wenshusongdahuizheng} />
 	      	</div>
 	      </div>
       </HashRouter>
@@ -66,4 +72,7 @@ class App extends React.Component {
   }
 }
 
-export default App;
+
+
+
+export default App ;
