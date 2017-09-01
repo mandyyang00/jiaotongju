@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './component/share/Header/Header'
+import Header from './component/Header/Header'
 import Nav from './component/share/Nav/Nav'
 import Login from './component/Login/Login'
 import Lian from './component/Lian/Lian'
@@ -21,6 +21,8 @@ import {
 } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './redux/store'
+import './component/Header/header.css'
+
 
 
 class App extends React.Component {
@@ -38,7 +40,7 @@ class App extends React.Component {
             <Route path='/' exact component={Login} />
             <Route path='/yijianshulist' component={Yijianshulist} />
             <Route path='/lianlist' exact component={LianList} />
-	        	<Route path='/lian' exact component={Lian} />
+            <Route path='/lian' exact component={Lian} />
             <Route path='/zhengju' exact component={Zhengju} />
             <Route path='/zhengjulist' exact component={Zhengjulist} />
             <Route path='/cheliang' exact component={Cheliang}/>
@@ -46,6 +48,7 @@ class App extends React.Component {
             <Route path='/xianchangbilu' exact component={Xianchangbilu}/>
             <Route path='/xunwenbilu' exact component={Xunwenbilu}/>
             <Route path='/nav' component={Nav} />
+            
             <Route path='/header' component={Header} />
 	      	</div>
 	      </div>

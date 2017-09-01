@@ -106,7 +106,7 @@ class Login extends React.Component{
 			     
 						{visibal 
 					?
-					<Link  to='/lianlist'>
+					<Link  to='/header'>
 			      	<Button type="button" style={styleButton}>登录
 			      	</Button>
 		     		</Link>

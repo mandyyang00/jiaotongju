@@ -4,8 +4,7 @@
 }
 .app{
 	width: 100%;
-	height: 100vh;
-  width: 100%;
+	/*height:100vh;*/
   background-image: url('images/6.jpg');
   background-repeat: no-repeat;
   background-size:100% 100% ;
@@ -41,3 +40,13 @@ h1{
 
 
 
+/*<Route path='/yijianshulist' component={Yijianshulist} />
+               <Route path='/lianlist' exact component={LianList} />
+              <Route path='/lian' exact component={Lian} />
+               <Route path='/zhengju' exact component={Zhengju} />
+               <Route path='/zhengjulist' exact component={Zhengjulist} />
+               <Route path='/cheliang' exact component={Cheliang}/>
+               <Route path='/yijianshu' exact component={Yijianshu}/>
+               <Route path='/xianchangbilu' exact component={Xianchangbilu}/>
+               <Route path='/xunwenbilu' exact component={Xunwenbilu}/>
+               <Route path='/nav' component={Nav} />*/
