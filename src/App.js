@@ -11,6 +11,14 @@ import Xunwenbilu from './component/Xunwenbilu/Xunwenbilu'
 import LianList from './component/lianList/lianList'
 import Yijianshulist from './component/Yijianshulist/Yijianshulist'
 import Zhengjulist from './component/Zhengjulist/Zhengjulist'
+import Zelinggaizhengtongzhishu from './component/Zelinggaizhengtongzhishu/Zelinggaizhengtongzhishu'
+import Anjianchuliyijianshu from './component/Anjianchuliyijianshu/Anjianchuliyijianshu'
+import Chufajieanbaogao from './component/Chufajieanbaogao/Chufajieanbaogao'
+import Jiaotongweifaxingweidiaochabaogao from './component/Jiaotongweifaxingweidiaochabaogao/Jiaotongweifaxingweidiaochabaogao'
+import Jiaotongxingzhengzhifaanjianjieanbaogao from './component/Jiaotongxingzhengzhifaanjianjieanbaogao/Jiaotongxingzhengzhifaanjianjieanbaogao'
+import Weifaxingweitongzhishu from './component/Weifaxingweitongzhishu/Weifaxingweitongzhishu'
+import Wenshusongdahuizheng from './component/Wenshusongdahuizheng/Wenshusongdahuizheng'
+import Xingzhengchufajuedingshu from './component/Xingzhengchufajuedingshu/Xingzhengchufajuedingshu'
 
 import 'antd/dist/antd.css';
 import './App.css'
@@ -48,8 +56,8 @@ class App extends React.Component {
             <Route path='/xianchangbilu' exact component={Xianchangbilu}/>
             <Route path='/xunwenbilu' exact component={Xunwenbilu}/>
             <Route path='/nav' component={Nav} />
-            
             <Route path='/header' component={Header} />
+            <Route path='/zelinggaizhengtongzhishu' component={Zelinggaizhengtongzhishu} />
 	      	</div>
 	      </div>
       </HashRouter>
