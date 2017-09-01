@@ -1,6 +1,6 @@
 import React from 'react'
 import './lianlist.css'
-import Header from '../Header/Header'
+import Header from '../share/Header/Header'
 import axios from 'axios'
 import {url} from '../config'
 import {Link} from 'react-router-dom'

@@ -1,0 +1,53 @@
+.header{
+ display: block;
+	width: 100%;
+
+}
+.header .title{
+	overflow: hidden;
+}
+.header h2{
+	float:left;
+	text-align: left;
+	font-size: 26px;
+	text-indent: 30px;
+	line-height: 60px;
+	text-shadow:4px 4px 6px #cccccc;
+	color:#FAFAFA;
+}
+.header .logout{
+	font-size: 14px;
+	color:white;
+	text-indent: 10px;
+	cursor: pointer;
+	line-height: 20px;
+	float:right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.header .head{
+	width: 100%;
+	overflow: hidden;
+	background:linear-gradient(#B7B7B7,	#BCD2EE);
+}
+.header .head p{
+	line-height: 25px;
+	/*border-bottom:2px solid ;*/
+	text-indent: 5px; 
+}
+.header .sidebar{
+	width: 250px;
+	height: 100vh;
+	background:radial-gradient(white,black);
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+.header .sidebar div{
+	width: 245px;
+	height: 100vh;
+	margin-top: 5px;
+	margin-bottom-bottom:20px;
+	background-color: #fff;
+	border-radius: 20px;
+	
+}

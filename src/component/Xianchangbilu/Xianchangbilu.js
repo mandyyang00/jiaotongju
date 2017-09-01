@@ -1,6 +1,6 @@
 import React from 'react'
 import './xianchangbilu.css'
-import Header from '../Header/Header'
+import Header from '../share/Header/Header'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {url} from '../config'

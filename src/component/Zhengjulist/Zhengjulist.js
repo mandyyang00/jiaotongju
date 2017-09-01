@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../Header/Header'
+import Header from '../share/Header/Header'
 import './zhengjulist.css'
 import {
   Link

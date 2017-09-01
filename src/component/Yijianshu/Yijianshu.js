@@ -1,6 +1,6 @@
 import React from 'react'
 import './yijianshu.css'
-import Header from '../Header/Header'
+import Header from '../share/Header/Header'
 import {Link} from 'react-router-dom'
 
 

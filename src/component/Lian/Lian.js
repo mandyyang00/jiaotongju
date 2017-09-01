@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../Header/Header'
+import Header from '../share/Header/Header'
 import './lian.css'
 import { connect } from 'react-redux'
 import axios from 'axios'

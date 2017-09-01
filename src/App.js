@@ -1,6 +1,7 @@
 import React from 'react';
+import Header from './component/share/Header/Header'
+import Nav from './component/share/Nav/Nav'
 import Login from './component/Login/Login'
-import Header from './component/Header/Header'
 import Lian from './component/Lian/Lian'
 import Zhengju from './component/Zhengju/Zhengju'
 import Cheliang from './component/Cheliang/Cheliang'
@@ -10,6 +11,7 @@ import Xunwenbilu from './component/Xunwenbilu/Xunwenbilu'
 import LianList from './component/lianList/lianList'
 import Yijianshulist from './component/Yijianshulist/Yijianshulist'
 import Zhengjulist from './component/Zhengjulist/Zhengjulist'
+
 import 'antd/dist/antd.css';
 import './App.css'
 import {
@@ -32,6 +34,7 @@ class App extends React.Component {
 	    	<div className='app'>
           
           <div>
+        
             <Route path='/' exact component={Login} />
             <Route path='/yijianshulist' component={Yijianshulist} />
             <Route path='/lianlist' exact component={LianList} />
@@ -42,6 +45,8 @@ class App extends React.Component {
             <Route path='/yijianshu' exact component={Yijianshu}/>
             <Route path='/xianchangbilu' exact component={Xianchangbilu}/>
             <Route path='/xunwenbilu' exact component={Xunwenbilu}/>
+            <Route path='/nav' component={Nav} />
+            <Route path='/header' component={Header} />
 	      	</div>
 	      </div>
       </HashRouter>

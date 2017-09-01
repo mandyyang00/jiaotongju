@@ -69,22 +69,23 @@ class Login extends React.Component{
   render(){
   	
   	let style={
-  		'width':'500px',
-  		'height':'45px',
-  		'borderRadius':'0',
+  		'width':'200px',
+  		'height':'40px',
+  		'borderRadius':'3px',
   		'display':'block',
   		'margin':'0 auto',
-  		'marginTop':'30px'
+  		'marginTop':'30px',
+  		'border':'1px solid #aaaaaa'
   	}
   	let styleButton={
   		'display':'block' ,
-		'width': '500px',
-		'height': '45px',
-		'border-radius': '0',
+		'width': '200px',
+		'height': '40px',
+		'borderRadius': '3px',
 		'margin': '0 auto',
 		'marginTop':'30px',
 		'backgroundColor':'#49a9ee',
-		'border':'0'
+		'border':'1px solid #aaaaaa'
 	}
 	
 	let {visibal} =this.state
@@ -95,22 +96,25 @@ class Login extends React.Component{
 
       <div className='login'>	
       	
-				<div>
+				<div className='clearfix'>
       		
-	      	<h1>秦皇岛市交通局执法系统</h1>
-	      	<div className="text" >
-		         <Input placeholder="账号" style={style} className='account' />
-		        	<Input placeholder="密码" style={style} className='password'/>
-		      </div>
-				{visibal 
+		      	<h1><i>秦皇岛市交通运输<br/>行政执法系统</i></h1>
+		      	<div className="text">
+		      	
+			         <Input placeholder="账号" style={style} className='account' />
+			        	<Input placeholder="密码" style={style} className='password'/>
+			     
+						{visibal 
 					?
 					<Link  to='/lianlist'>
 			      	<Button type="button" style={styleButton}>登录
 			      	</Button>
 		     		</Link>
 		     		:
-		      	<Button type="button" style={styleButton} onClick={this.onClick.bind(this)} >登录</Button>
-		    }
+		      	<Button type="button" style={styleButton} onClick={this.onClick.bind(this)}>登录</Button>
+
+		    		}
+		    </div>
 		     	
 		  
 			</div>
