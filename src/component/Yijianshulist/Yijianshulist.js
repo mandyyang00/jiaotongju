@@ -1,6 +1,6 @@
 import React from 'react'
 import './yijianshulist.css'
-import Header from '../share/Header/Header'
+
 import axios from 'axios'
 import {url} from '../config'
 import {Link} from 'react-router-dom'
@@ -11,7 +11,7 @@ class Yijianshulist extends React.Component{
 	render(){
 		return(
 			<div className='yijianshulist'>
-				<Header></Header>
+				
 				<h1>案件处理意见书待处理</h1>
 				<div className='content'>
 					<table>
