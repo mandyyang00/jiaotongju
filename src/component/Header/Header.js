@@ -7,6 +7,7 @@ import {Icon} from 'antd'
 import Cheliang from '../Cheliang/Cheliang'
 import Chufajieanbaogao from '../Chufajieanbaogao/Chufajieanbaogao'
 import Jiaotongweifaxingweidiaochabaogao from '../Jiaotongweifaxingweidiaochabaogao/Jiaotongweifaxingweidiaochabaogao'
+import Jiaotongxingzhengzhifaanjianjieanbaogao from '../Jiaotongxingzhengzhifaanjianjieanbaogao/Jiaotongxingzhengzhifaanjianjieanbaogao'
 import Lian from '../Lian/Lian'
 import lianList from '../lianList/lianList'
 import Weifaxingweitongzhishu from '../Weifaxingweitongzhishu/Weifaxingweitongzhishu'
@@ -62,7 +63,7 @@ class Header extends React.Component{
 						</ul>
 					</div>
 					<div className='content1ss'>
-						<Jiaotongweifaxingweidiaochabaogao></Jiaotongweifaxingweidiaochabaogao>
+						<Wenshusongdahuizheng></Wenshusongdahuizheng>
 						
 			         
 					</div>

@@ -1,0 +1,31 @@
+.jiaotongxingzhengzhifaanjianjieanbaogao{
+	width: 100%;
+}
+.jiaotongxingzhengzhifaanjianjieanbaogao table{
+	border-collapse:collapse;
+}
+.jiaotongxingzhengzhifaanjianjieanbaogao td{
+	border:1px solid #aaaaaa;
+	height: 40px;
+	text-align: center
+}
+.jiaotongxingzhengzhifaanjianjieanbaogao input,textarea{
+	width: 98%;
+	border: 0;
+	outline: 0
+}
+.jiaotongxingzhengzhifaanjianjieanbaogao .title{
+	width: 120px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #aaaaaa;
+
+}
+
+.jiaotongxingzhengzhifaanjianjieanbaogao  .time{
+	width: 50px;
+/*	border-bottom: 1px solid #AAAAAA*/
+}
+.jiaotongxingzhengzhifaanjianjieanbaogao p{
+	text-align: right;
+	line-height: 30px;
+}

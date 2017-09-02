@@ -1,0 +1,35 @@
+.wenshusongdahuizheng{
+	width: 100%;
+}
+.wenshusongdahuizheng table{
+	border-collapse:collapse;
+}
+.wenshusongdahuizheng td{
+	border:1px solid #aaaaaa;
+	height: 40px;
+	text-align: center
+}
+.wenshusongdahuizheng input,textarea{
+	width: 98%;
+	border: 0;
+	outline: 0
+}
+.wenshusongdahuizheng .title{
+	width: 120px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #aaaaaa;
+
+}
+
+.wenshusongdahuizheng  .time{
+	width: 50px;
+/*	border-bottom: 1px solid #AAAAAA*/
+}
+.wenshusongdahuizheng p{
+	text-align: left;
+	line-height: 30px;
+}
+.wenshusongdahuizheng p span{
+	display: inline-block;
+	text-indent: 23px;
+}

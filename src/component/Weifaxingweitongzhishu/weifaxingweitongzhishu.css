@@ -1,0 +1,10 @@
+.weifaxingweitongzhishu {
+	width: 100%;
+}
+.weifaxingweitongzhishu input{
+	border: 0;
+	border-bottom:1px solid #aaaaaa;
+}
+.weifaxingweitongzhishu p{
+	line-height: 30px;
+}
