@@ -1,0 +1,18 @@
+.zelinggaizhengtongzhishu{
+	width: 100%;
+}
+.zelinggaizhengtongzhishu input{
+	outline: 0;
+	border:0;
+	border-bottom:1px solid #aaaaaa;
+}
+.zelinggaizhengtongzhishu p{
+	
+	line-height: 35px;
+}
+.zelinggaizhengtongzhishu .title{
+	width: 80px;
+}
+.zelinggaizhengtongzhishu .time{
+	width: 60px;
+}

@@ -60,7 +60,7 @@ class LianList extends React.Component{
 
 			<div className='lianlist' style={{'margin':'0 auto'}}>
 			
-				<h1>清单</h1>
+				<h1>立案申请表清单</h1>
 				
 				<table>
 					<thead>

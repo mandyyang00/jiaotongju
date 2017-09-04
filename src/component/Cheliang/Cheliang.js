@@ -19,7 +19,7 @@ class Cheliang extends React.Component{
 				<div className='title'>
 					<input type="text"/>
 					<span> 罚案</span>
-					<span style={{'border':'0','width':'10px'}}>(</span><input type="text" style={{'border':'0','width':'40px'}}/><span style={{'border':'0','width':'10px'}}>)</span>
+					<span style={{'border':'0','width':'10px'}}>(</span><input type="text" style={{'border':'0','width':'60px'}}/><span style={{'border':'0','width':'10px'}}>)</span>
 					
 					<input type="text"/>
 					<span>号</span>
