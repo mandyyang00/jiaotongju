@@ -30,72 +30,116 @@ class Header extends React.Component{
 	constructor(){
 		super()
 		this.state={
-			which:<p><i>秦皇岛市交通运输<br/>行政执法系统</i></p>
+			which:{
+				aa:<p><i>秦皇岛市交通运输<br/>行政执法系统</i></p>,
+				bb:'首页'
+			}
 		}
 	}
 	onClick(names){
 		if(names=='立案审批表'){
 			this.setState({
-				which:<lianList></lianList>
+				which:{
+					aa:<lianList></lianList>,
+					bb:'立案审批表'
+				}
+
 			})
 		}else if(names=='询问笔录'){
 			this.setState({
-				which:<Xunwenbilu></Xunwenbilu>
+					which:{
+						aa:<Xunwenbilu></Xunwenbilu>,
+						bb:'询问笔录'
+					}
 			})
 
 		}else if(names=='现场笔录'){
 			this.setState({
-				which:<Xianchangbilu></Xianchangbilu>
+					which:{
+						aa:<Xianchangbilu></Xianchangbilu>,
+						bb:'现场笔录'
+					}
 			})
 
 		}else if(names=='证据登记保存清单'){
 			this.setState({
-				which:<zhengju></zhengju>
+					which:{
+						aa:<zhengju></zhengju>,
+						bb:'证据登记保存清单'
+					}
 			})
 
 		}else if(names=='车辆暂扣凭证'){
 			this.setState({
-				which:<Cheliang></Cheliang>
+					which:{
+						aa:<Cheliang></Cheliang>,
+						bb:'车辆暂扣凭证'
+					}
 			})
 
 		}else if(names=='责令改正通知书'){
 			this.setState({
-				which:<Zelinggaizhengtongzhishu></Zelinggaizhengtongzhishu>
+					which:{
+						aa:<Zelinggaizhengtongzhishu></Zelinggaizhengtongzhishu>,
+						bb:'责令改正通知书'
+					}
 			})
 
 		}else if(names=='案件处理意见书'){
 			this.setState({
-				which:<Yijianshu></Yijianshu>
+					which:{
+						aa:<Yijianshu></Yijianshu>,
+						bb:'案件处理意见书'
+
+					}
 			})
 
 		}else if(names=='违法行为通知书'){
 			this.setState({
-				which:<Weifaxingweitongzhishu></Weifaxingweitongzhishu>
+					which:{
+						aa:<Weifaxingweitongzhishu></Weifaxingweitongzhishu>,
+						bb:'违法行为通知书'
+					}
 			})
 
 		}else if(names=='行政处罚决定书'){
 			this.setState({
-				which:<Xingzhengchufajuedingshu></Xingzhengchufajuedingshu>
+					which:{
+						aa:<Xingzhengchufajuedingshu></Xingzhengchufajuedingshu>,
+						bb:'行政处罚决定书'
+					}
 			})
 
 		}else if(names=='文书送达回证'){
 			this.setState({
-				which:<Wenshusongdahuizheng></Wenshusongdahuizheng>
+					which:{
+						aa:<Wenshusongdahuizheng></Wenshusongdahuizheng>,
+						bb:'文书送达回证'
+					}
 			})
 
 		}else if(names=='处罚结案报告'){
 			this.setState({
-				which:<Chufajieanbaogao></Chufajieanbaogao>
+					which:{
+						aa:<Chufajieanbaogao></Chufajieanbaogao>,
+						bb:'处罚结案报告'
+					}
 			})
 
 		}else if(names=='交通违法行为调查报告'){
 			this.setState({
-				which:<Jiaotongweifaxingweidiaochabaogao></Jiaotongweifaxingweidiaochabaogao>
+					which:{
+						aa:<Jiaotongweifaxingweidiaochabaogao></Jiaotongweifaxingweidiaochabaogao>,
+						bb:'交通违法行为调查报告'
+					}
 			})
 
 		}else if(names=='交通行政执法案件结案报告'){
 			this.setState({
-				which:<Jiaotongxingzhengzhifaanjianjieanbaogao></Jiaotongxingzhengzhifaanjianjieanbaogao>
+					which:{
+						aa:<Jiaotongxingzhengzhifaanjianjieanbaogao></Jiaotongxingzhengzhifaanjianjieanbaogao>,
+						bb:'交通行政执法案件结案报告'
+					}
 			})
 
 		}
@@ -121,7 +165,7 @@ class Header extends React.Component{
 					</p>
 				</div>
 				<div className='headss'>
-					<p>首页<Icon type="right"/><span>首页</span></p>
+					<p>首页<Icon type="right"/><span>{this.state.which.bb}</span></p>
 				</div>
 				<div className='contentss clearfix'>
 					<div className='sidebarss'>
@@ -142,7 +186,7 @@ class Header extends React.Component{
 						</ul>
 					</div>
 					<div className='content1ss'>
-						{this.state.which}
+						{this.state.which.aa}
 						
 			         
 					</div>

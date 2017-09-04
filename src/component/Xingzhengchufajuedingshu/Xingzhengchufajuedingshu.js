@@ -11,6 +11,7 @@ class Xingzhengchufajuedingshu extends React.Component{
 	render(){
 		return(
 			<div className='xingzhengchufajuedingshu'>
+			<button>返回</button>
 				<h1>行政处罚决定书</h1>
 				<div>
 					<p style={{'textAlign':'right'}}>
@@ -31,7 +32,7 @@ class Xingzhengchufajuedingshu extends React.Component{
 								<input type="text"/>
 							</td>
 							<td style={{'width':'50px'}}>性别</td>
-							<td style={{'width':'60px'}}>
+							<td style={{'width':'100px'}}>
 								<input type="text"/>
 							</td>
 							<td style={{'width':'50px'}}>身份<br/>证号</td>

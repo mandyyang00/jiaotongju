@@ -11,6 +11,7 @@ class Jiaotongxingzhengzhifaanjianjieanbaogao extends React.Component{
 	render(){
 		return(
 			<div className='jiaotongxingzhengzhifaanjianjieanbaogao'>
+			<button>返回</button>
 				<h1>交通行政执法案件结案报告</h1>
 				<table>
 					<tr>

@@ -15,6 +15,7 @@ class Chufajieanbaogao extends React.Component{
 
 
 						<div className='chufajieanbaogao'>
+						<button>返回</button>
 							<h1>处罚结案报告</h1>
 							<div className='content'>
 								<p style={{'textAlign':'left'}}>案件名称：
@@ -22,17 +23,17 @@ class Chufajieanbaogao extends React.Component{
 								</p>
 								<table>
 									<tr>
-										<td rowSpan='5' style={{'width': '50px'}}>当事<br/>人基<br/>本情<br/>况</td>
+										<td rowSpan='5' style={{'width': '60px'}}>当事<br/>人基<br/>本情<br/>况</td>
 										<td  style={{'width': '100px'}}>公民</td>
-										<td  style={{'width': '26%'}}>
+										<td  style={{'width': '28%'}}>
 											<input type="text"/>
 										</td>
 										<td  style={{'width': '60px'}}>年龄</td>
-										<td style={{'width': '20%'}}>
+										<td style={{'width': '28%'}}>
 											<input type="text"/>
 										</td>
 										<td style={{'width': '60px'}}>性别</td>
-										<td style={{'width': '20%'}}>
+										<td>
 											<input type="text"/>
 										</td>
 									</tr>

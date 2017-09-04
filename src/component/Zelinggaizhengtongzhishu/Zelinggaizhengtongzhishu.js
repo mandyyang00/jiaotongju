@@ -11,6 +11,7 @@ class Zelinggaizhengtongzhishu extends React.Component{
 	render(){
 		return(
 			<div className='zelinggaizhengtongzhishu'>
+			<button>返回</button>
 				<h1>责令改正通知书</h1>
 				<div>
 					

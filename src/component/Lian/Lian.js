@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './lian.css'
 import { connect } from 'react-redux'
 import axios from 'axios'
@@ -71,7 +70,7 @@ class Lian extends React.Component{
 					<div className='title'>
 					<input type="text" value={data.Code1}/>
 					<span >罚案</span>
-					<span style={{'border':'0','width':'10px'}}>(</span><input type="text" style={{'border':'0','width':'40px'}} value={data.Code2}/><span style={{'border':'0','width':'10px'}}>)</span>
+					<span style={{'border':'0','width':'10px'}}>（</span><input type="text" style={{'border':'0','width':'40px'}} value={data.Code2}/><span style={{'border':'0','width':'10px'}}>）</span>
 					
 					<input type="text" value={data.Code3}/>
 					<span>号</span>
@@ -203,12 +202,12 @@ class Lian extends React.Component{
 
 				
 				
-				<Link to='./xianchangbilu'><button>查询现场笔录</button></Link>
-				<Link to='./xunwenbilu'><button>查询询问笔录</button></Link>
-				<Link to='./zhengju'><button>新增证据登记保存清单</button></Link>
-				<Link to='./cheliang'><button>车辆暂扣凭证</button></Link>
-				<Link to='./yijianshu'><button>提交</button></Link>
-				<Link to='./lianlist'><button onClick={this.goBack.bind(this)}>返回</button></Link>
+				<button>查询现场笔录</button>
+				<button>查询询问笔录</button>
+				<button>新增证据登记保存清单</button>
+				<button>车辆暂扣凭证</button>
+				<button>提交</button>
+				<button onClick={this.goBack.bind(this)}>返回</button>
 				
 			</div>
 

@@ -11,11 +11,12 @@ class Jiaotongweifaxingweidiaochabaogao extends React.Component{
 	render(){
 		return(
 			<div className='jiaotongweifaxingweidiaochabaogao'>
+			<button>返回</button>
 				<h1>交通违法行为调查报告</h1>
 				<table>
 					<tr>
 						<td rowSpan='2' style={{'width':'50px'}}>案<br/>由</td>
-						<td colSpan='5' rowSpan='2'>
+						<td colSpan='5' rowSpan='2' style={{'width':'40%'}}>
 							<input type="text"/>
 						</td>
 						<td colSpan='2' rowSpan='2'>案件调<br/>查人员</td>

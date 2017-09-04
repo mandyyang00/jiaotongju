@@ -1,5 +1,6 @@
 .xingzhengchufajuedingshu{
 	width: 100%;
+	margin-bottom: 20px;
 }
 .xingzhengchufajuedingshu table{
 	border-collapse:collapse;
@@ -23,7 +24,7 @@
 }
 
 .xingzhengchufajuedingshu  .time{
-	width: 50px;
+	width: 80px;
 /*	border-bottom: 1px solid #AAAAAA*/
 }
 .xingzhengchufajuedingshu p{

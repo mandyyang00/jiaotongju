@@ -49,4 +49,6 @@
 }
 .cheliang input {
 	width: 95%;
+	border:0;
+	outline: 0;
 }

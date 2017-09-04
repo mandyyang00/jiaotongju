@@ -11,6 +11,7 @@ class Wenshusongdahuizheng extends React.Component{
 	render(){
 		return(
 			<div className='wenshusongdahuizheng'>
+			<button>返回</button>
 				<h1>文书送达回证</h1>
 				<div>
 					<p style={{'lineHeight':'30px','marginBottom':'5px'}}>案件名称：
