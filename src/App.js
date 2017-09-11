@@ -12,7 +12,6 @@ import LianList from './component/lianList/lianList'
 import Yijianshulist from './component/Yijianshulist/Yijianshulist'
 import Zhengjulist from './component/Zhengjulist/Zhengjulist'
 import Zelinggaizhengtongzhishu from './component/Zelinggaizhengtongzhishu/Zelinggaizhengtongzhishu'
-
 import Chufajieanbaogao from './component/Chufajieanbaogao/Chufajieanbaogao'
 import Jiaotongweifaxingweidiaochabaogao from './component/Jiaotongweifaxingweidiaochabaogao/Jiaotongweifaxingweidiaochabaogao'
 import Jiaotongxingzhengzhifaanjianjieanbaogao from './component/Jiaotongxingzhengzhifaanjianjieanbaogao/Jiaotongxingzhengzhifaanjianjieanbaogao'
@@ -47,14 +46,14 @@ class App extends React.Component {
         
             <Route path='/' exact component={Login} />
             <Route path='/yijianshulist' component={Yijianshulist} />
-            <Route path='/lianlist' exact component={LianList} />
-            <Route path='/lian' exact component={Lian} />
-            <Route path='/zhengju' exact component={Zhengju} />
-            <Route path='/zhengjulist' exact component={Zhengjulist} />
-            <Route path='/cheliang' exact component={Cheliang}/>
-            <Route path='/yijianshu' exact component={Yijianshu}/>
-            <Route path='/xianchangbilu' exact component={Xianchangbilu}/>
-            <Route path='/xunwenbilu' exact component={Xunwenbilu}/>
+            <Route path='/lianlist' component={LianList} />
+            <Route path='/lian'  component={Lian} />
+            <Route path='/zhengju'  component={Zhengju} />
+            <Route path='/zhengjulist'  component={Zhengjulist} />
+            <Route path='/cheliang'  component={Cheliang}/>
+            <Route path='/yijianshu'  component={Yijianshu}/>
+            <Route path='/xianchangbilu'  component={Xianchangbilu}/>
+            <Route path='/xunwenbilu'  component={Xunwenbilu}/>
             <Route path='/nav' component={Nav} />
             <Route path='/header' component={Header} />
             <Route path='/zelinggaizhengtongzhishu' component={Zelinggaizhengtongzhishu} />

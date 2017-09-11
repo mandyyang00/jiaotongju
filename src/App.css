@@ -41,5 +41,8 @@ td{
   box-sizing:border-box;
 }
 
+ .ss{
 
+  background: linear-gradient(to right bottom,transparent 49.5%,#aaa 49.5%,#aaa 51%,transparent 50%);
+}
 

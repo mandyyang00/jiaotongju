@@ -4,9 +4,7 @@ import {
   Link
 } from 'react-router-dom'
 import {Icon} from 'antd'
-
 import Xunwenbilu from '../Xunwenbilu/Xunwenbilu'
-
 import Cheliang from '../Cheliang/Cheliang'
 import Chufajieanbaogao from '../Chufajieanbaogao/Chufajieanbaogao'
 import Jiaotongweifaxingweidiaochabaogao from '../Jiaotongweifaxingweidiaochabaogao/Jiaotongweifaxingweidiaochabaogao'
@@ -31,7 +29,7 @@ class Header extends React.Component{
 		super()
 		this.state={
 			which:{
-				aa:<p><i>秦皇岛市交通运输<br/>行政执法系统</i></p>,
+				aa:<lianList/>,
 				bb:'首页'
 			}
 		}
@@ -40,7 +38,7 @@ class Header extends React.Component{
 		if(names=='立案审批表'){
 			this.setState({
 				which:{
-					aa:<lianList></lianList>,
+					aa:<Lian></Lian>,
 					bb:'立案审批表'
 				}
 

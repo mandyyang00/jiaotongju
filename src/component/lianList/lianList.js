@@ -1,6 +1,5 @@
 import React from 'react'
 import './lianlist.css'
-
 import axios from 'axios'
 import {url} from '../config'
 import {Link} from 'react-router-dom'
@@ -53,11 +52,6 @@ class LianList extends React.Component{
 
 		return(
 			
-
-
-
-
-
 			<div className='lianlist' style={{'margin':'0 auto'}}>
 			
 				<h1>立案申请表清单</h1>

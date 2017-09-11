@@ -5,6 +5,7 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import {url} from '../config'
 import {Icon} from 'antd'
+import classnames from 'classnames'
 
 
 class Lian extends React.Component{
@@ -29,8 +30,8 @@ class Lian extends React.Component{
 	idOk(res){
 		this.setState({
 			data:res.data,
-				xianchangId:res.data.SceneRecordID,
-				xunwenId:res.data.AskRecordID
+			xianchangId:res.data.SceneRecordID,
+			xunwenId:res.data.AskRecordID
 		})
 		sessionStorage.setItem('xianchangId',res.data.SceneRecordID)
 		sessionStorage.setItem('xunwenId',res.data.AskRecordID)
@@ -41,6 +42,7 @@ class Lian extends React.Component{
 			.then(res=>this.goBackDone(res))
 			.catch(err=>console.log(err))
 	}
+	
 	goBackDone(res){
 		console.log('sdfdf',res)
 		sessionStorage('lianPCid','')
@@ -56,10 +58,6 @@ class Lian extends React.Component{
 		console.log(data)
 		return(
 			
-
-
-
-
 
 			<div className='lian'>
 				
